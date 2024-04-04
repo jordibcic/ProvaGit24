@@ -1,17 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dwc8a2wkuuiiv"]
+[gd_scene load_steps=2 format=3 uid="uid://dwc8a2wkuuiiv"]
 
-[ext_resource type="Texture2D" uid="uid://bl8y1hmvq0trf" path="res://icon.svg" id="1_yndnl"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4vieu"]
-size = Vector2(123, 128)
+[ext_resource type="PackedScene" uid="uid://b27kigxgjowbt" path="res://moneda.tscn" id="1_tdvgp"]
 
 [node name="Joc" type="Node2D"]
 
-[node name="Moneda" type="Area2D" parent="."]
-
-[node name="Sprite2D" type="Sprite2D" parent="Moneda"]
-texture = ExtResource("1_yndnl")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Moneda"]
-position = Vector2(0.5, -1)
-shape = SubResource("RectangleShape2D_4vieu")
+[node name="Moneda" parent="." instance=ExtResource("1_tdvgp")]
