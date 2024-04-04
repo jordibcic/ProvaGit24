@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dox5woy5jiyaa"]
+
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_n2dkd"]
+[ext_resource type="Texture2D" uid="uid://bl8y1hmvq0trf" path="res://icon.svg" id="2_276eq"]
+
+[node name="Personatge" type="CharacterBody2D"]
+scale = Vector2(0.2, 0.2)
+script = ExtResource("1_n2dkd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_276eq")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(53, -60, 55, -60, 55, -59, 56, -59, 56, -58, 57, -58, 57, -57, 58, -57, 58, -56, 59, -56, 59, -55, 60, -55, 60, -53, 61, -53, 61, 53, 60, 53, 60, 55, 59, 55, 59, 56, 58, 56, 58, 57, 57, 57, 57, 58, 56, 58, 56, 59, 55, 59, 55, 60, 53, 60, 53, 61, -53, 61, -53, 60, -55, 60, -55, 59, -56, 59, -56, 58, -57, 58, -57, 57, -58, 57, -58, 56, -59, 56, -59, 55, -60, 55, -60, 53, -61, 53, -61, -53, -60, -53, -60, -55, -59, -55, -59, -56, -58, -56, -58, -57, -57, -57, -57, -58, -56, -58, -56, -59, -55, -59, -55, -60, -53, -60, -53, -61, 53, -61)
