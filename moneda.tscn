@@ -1,15 +1,18 @@
 [gd_scene load_steps=3 format=3 uid="uid://b27kigxgjowbt"]
 
-[ext_resource type="Texture2D" uid="uid://bl8y1hmvq0trf" path="res://icon.svg" id="1_sgxuj"]
+[ext_resource type="Texture2D" uid="uid://byc2uf71utktt" path="res://tilemap.png" id="1_21g0o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4vieu"]
-size = Vector2(123, 128)
+size = Vector2(59, 60)
 
 [node name="Moneda" type="Area2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_sgxuj")
+scale = Vector2(5, 5)
+texture = ExtResource("1_21g0o")
+region_enabled = true
+region_rect = Rect2(209.11, 133.287, 17.8898, 18.7129)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, -1)
+position = Vector2(-0.5, -3)
 shape = SubResource("RectangleShape2D_4vieu")
